@@ -22,13 +22,17 @@ body{
 .blue{
     color: blue;
 }
+
+.green{
+    color: rgb(51, 255, 0);
+}
 /* common */
 
 /* common */
 
 /* main */
 main{
-    height: 95vh;
+    height: 90vh;
     background-color: black;
     position: relative;
 }
@@ -68,6 +72,7 @@ main .contenitore .frecce i{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
 }
 .partecipanti .item img{
     width: 100%;
@@ -79,6 +84,7 @@ main .contenitore .frecce i{
     position: relative;
     width: calc(20% - 10px);
     margin: 5px;
+    height: calc(100% /5 - 10px);
 }
 
 .partecipanti .item .name{
@@ -117,22 +123,45 @@ main .contenitore .frecce i{
 
 /* footer */
 footer{
-    height: 5vh;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer>div{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
+footer>div:last-child{
+    padding: 0 20px;
+    background-color: rgb(80, 80, 80);
+    color: red;
+}
+
+footer .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 14px;
+    height: 80%;
+    justify-content: space-around;
+}
+footer .icon .fs30{
+    font-size: 30px;
+}
+
+.icon:nth-child(2){
+    position: relative;
+}
+.numbers{
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
 /* footer */
 /* debug */
-.debug main .contenitore  {
-    background-color: aqua;
-}
 
-.debug main .contenitore>div  {
-    background-color: red;  
-}
-
-.debug main .item  {
-    background-color: rebeccapurple;
-    width: calc(20% - 10px);
-    margin: 5px;
-}
 /* debug */
